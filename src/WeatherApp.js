@@ -102,7 +102,8 @@ export default class WeatherApp extends Component {
                             <View style={styles.zipContainer}>
                                 <TextInput 
                                     style={[styles.zipCode, styles.zipContainer]}
-                                    returnKeyType = 'go'
+                                    returnKeyType='go'
+                                    keyboardType='numeric'
                                     onSubmitEditing={this.handleInputChange.bind(this)}/>
                             </View>
                         </View>    
