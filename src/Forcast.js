@@ -20,22 +20,21 @@ var styles = StyleSheet.create({
         color: '#FFFFFF'
     }
 })
-module.export
 
 export default class Forcast extends Component {
-    
+
     constructor(){
         super(...arguments);
     }
-    
+
     render() {
         let forcast = this.props.data;
         let error = this.props.error;
-        
+
         return (error == '' && forcast != null) ? (
             <View>
                 <Text style={styles.bigText}>Forcast for {forcast.name}, {forcast.country}{'\n'}</Text>
-                
+
                 <Text style={styles.bigText}>
                     {forcast.main}
                 </Text>
